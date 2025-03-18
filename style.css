@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Montserrat:wght@100..900&display=swap');
+
+body {
+    background-color: #F5F5DC;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #003366;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul, ol {
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+    padding-left: 15px; /* Remove default padding */
+    list-style-position: outside;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+section {
+    max-width: 70%;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding-left: 1rem;
+}
+
+section h2 {
+    color: #333;
+}
+
+section p {
+    text-indent: 20px;
+    color: #333;
+}
+
+section ul, section ol {
+    color: #333;
+    font-size: 1rem;
+}
+
+#spurs-table table {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    position: relative;
+}
+
+aside {
+    background-color: #BF5700;
+    width: 18%;
+    margin-right: 20%;
+    margin-left: 5%;
+    line-height: 1.6;
+    padding: 15px;
+    float: right;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+aside p {
+    color: lightgoldenrodyellow;
+}
+
+aside a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+aside a:hover {
+    color: lightgoldenrodyellow; 
+    cursor: pointer;
+}
+
+aside ul, ol {
+    font-size: 90%;
+    color: lightgoldenrodyellow;
+}
+
+aside h4 {
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #003366;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+}
+
+nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+nav a:hover, .dropdown:hover .dropbtn {
+    background-color: #00509E;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+form {
+    max-width: 55%;
+    background-color: #BF5700;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-right: 5px auto;
+    margin-left: 0 auto;
+    margin-bottom: 2%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+input[type="submit"] {
+    background-color: #003366;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background-color: #00509E;
+}

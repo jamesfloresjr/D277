@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Us</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function validateEmail() {
+                // Get the values of the email fields
+                var email = document.getElementById('email').value;
+                var confirmEmail = document.getElementById('confirm-email').value;
+
+                // Check if the email fields match
+                if (email !== confirmEmail) {
+                    alert("Email addresses do not match. Please try again.");
+                    return false; // Prevent form submission
+                }
+                return true; // Allow form submission
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="contact-us.html">Contact</a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Cities
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-content">
+                        <a href="austin.html">Austin</a>
+                        <a href="dallas.html">Dallas</a>
+                        <a href="san_antonio.html">San Antonio</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <h1 align="center">Contact Us</h1>
+
+        <aside>
+            <img src="images/question.jpg" alt="Question">
+
+            <h4>Questions?</h4>
+            
+            <p>
+                Contact us to learn more about Texas!
+            </p>
+        </aside>
+
+        <section>
+            <form action="#" method="post" onsubmit="return validateEmail();">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="confirm-email">Confirm Email Address:</label>
+                <input type="email" id="confirm-email" name="confirm-email" required>
+            
+                <label for="question">Your Question:</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+            
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+    </body>
+</html>
